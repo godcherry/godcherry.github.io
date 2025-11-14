@@ -40,6 +40,10 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
@@ -72,9 +76,6 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
+    
   </article>
 </div>
