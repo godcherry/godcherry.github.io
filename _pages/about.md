@@ -8,7 +8,7 @@ profile:
   align: right
   image: yang.png
   image_circular: false # crops the image to make it circular
-  address: <p>zwchai[at]zju[dot]edu[dot]cn</p>
+  address: Email zwchai[at]zju[dot]edu[dot]cn
 
 social: true  # includes social icons at the bottom of the page
 news: true  # includes a list of news items
